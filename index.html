@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Something Special ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PAGE 1 : BIRTHDAY WISH -->
+    <section id="welcomeScreen" class="screen">
+        <div class="card">
+            <p class="small-text">A LITTLE SOMETHING FOR YOU...</p>
+
+            <h1>Happy Birthday Avinav</h1>
+
+            <div class="heart">♡</div>
+
+            <p class="message">
+                Today is your special day,<br>
+                so I made something a little different for you.
+            </p>
+
+            <button id="startBtn">idhar click kr pagal →</button>
+
+            <p class="hint">There is something waiting for you...</p>
+        </div>
+    </section>
+
+
+    <!-- PAGE 2 : READY -->
+    <section id="readyScreen" class="screen hidden">
+        <div class="card">
+            <div class="emoji">🎁</div>
+
+            <h2>Ready?</h2>
+
+            <p class="message">
+                Your birthday surprise<br>
+                is about to begin...
+            </p>
+
+            <button id="continueBtn">Continue →</button>
+        </div>
+    </section>
+
+
+    <!-- PAGE 3 : CAKE -->
+    <section id="cakeScreen" class="screen hidden">
+
+        <div class="cake-container">
+
+            <p class="cake-title">Maang le jo mangna h ✨</p>
+
+            <div class="cake">
+
+                <div class="candles">
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+                </div>
+
+                <div class="cake-top"></div>
+                <div class="cake-middle"></div>
+                <div class="cake-bottom"></div>
+
+            </div>
+
+            <div id="countdown" class="countdown"></div>
+
+            <p id="cakeMessage">
+                oye idhr click kr or fook maar 💨
+            </p>
+
+            <button id="blowBtn">Blow the Candles 💨</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- BIRTHDAY POPUP -->
+    <div id="birthdayPopup" class="popup hidden">
+
+        <div class="popup-box">
+
+            <div class="popup-emoji">🎂✨</div>
+
+            <h2>HAPPY BIRTHDAY mera bby ❤️</h2>
+
+            <p>
+                teri saari wish puri ho jaengi bcha... mere se dur jane ke alawa 😏 💫
+            </p>
+
+            <button id="loveBtn">yha dabaiye n ❤️</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PAGE 4 : LOVE -->
+<section id="loveScreen" class="screen hidden">
+
+    <div id="kissContainer"></div>
+
+    <div class="love-content">
+
+        <div class="big-heart">❤️</div>
+
+        <h1>I LOVE YOU Avinav</h1>
+
+        <p>More surprises are waiting for you...</p>
+
+        <div class="love-note">
+            💌 Made specially for you
+            kitni mehnat kri pta h ?????
+        </div>
+
+        <button id="loveContinueBtn">
+            Chl idhr click kr ❤️
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- PAGE 5 : DO YOU LOVE ME -->
+<section id="questionScreen" class="screen hidden">
+
+    <div class="question-content">
+
+        <div class="question-heart">♡</div>
+
+        <h1>Do you love me ??????</h1>
+
+        <p>No pe click krne ka sochna bhi mt... 👀</p>
+
+        <div class="answer-buttons">
+
+            <button id="yesBtn">
+                YES ❤️
+            </button>
+
+            <button id="noBtn">
+                NO 😏
+            </button>
+
+        </div>
+
+        <p id="noMessage"></p>
+
+    </div>
+
+</section>
+
+
+<!-- PAGE 6 : MEMORIES INTRO -->
+
+<section id="memoriesIntro" class="screen hidden">
+
+    <div class="card">
+
+        <div class="emoji">📸❤️</div>
+
+        <h2>Our Memories</h2>
+
+        <p class="message">
+            A little journey through<br>
+            all the beautiful moments we've shared...
+        </p>
+
+        <button id="memoriesBtn">
+            Let's Go →
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- PAGE 7 : MEMORIES -->
+
+<section id="memoriesScreen" class="screen hidden">
+
+    <div class="memories-container">
+
+        <p class="memory-heading">
+            Our Little Memories ❤️
+        </p>
+
+        <div class="memory-card">
+
+            <img id="memoryImage"
+                 src="memory1.jpg"
+                 alt="Our memory">
+
+            <div class="memory-text">
+
+                <p id="memoryNumber">1 / 5</p>
+
+                <h2 id="memoryTitle">
+                    The beginning ❤️
+                </h2>
+
+                <p id="memoryCaption">
+                    i love u betu .
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="memory-controls">
+
+            <button id="prevMemory">
+                ←
+            </button>
+
+            <span id="memoryCounter">
+                1 / 5
+            </span>
+
+            <button id="nextMemory">
+                →
+            </button>
+
+        </div>
+
+        <!-- AFTER MEMORIES -->
+
+        <button id="openLetterPageBtn">
+            There's something for you 💌
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- PAGE 8 : ENVELOPE -->
+
+<section id="letterScreen" class="screen hidden">
+
+    <div class="letter-intro">
+
+        <p class="letter-small">
+            A little something from me...
+        </p>
+
+        <div class="envelope" id="envelope">
+
+            <div class="envelope-flap"></div>
+
+            <div class="envelope-body"></div>
+
+            <div class="envelope-heart">
+                ❤️
+            </div>
+
+        </div>
+
+        <p class="open-text">
+            Open it when you're ready...
+        </p>
+
+        <button id="openLetterBtn">
+            kholo kholo 💌
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- PAGE 9 : LETTER -->
+
+<section id="letterContent" class="screen hidden">
+
+    <div class="letter-wrapper">
+
+        <div class="letter-paper">
+
+            <h1>My Everything, ♡</h1>
+
+            <p>
+                dekho letter me likhne layak to kuch achhi baate nii h to kuch achha nii likhungi...
+                or achhi hogi bhi to tu sir pe chdha jaega jra si tarif sunke
+            </p>
+
+            <p>
+                pr buri baate bhut h ....tum jbse life me aaye ho sukoon gayab ho gya h .
+                qki hmesha yhi sochte erhti hu ki tu kya kr rha hoga ya kya krega ya kya soch rha h etc.
+            </p>
+
+            <div class="letter-row">
+
+                <div class="letter-text">
+
+                    <p>
+                       tujhse jada m kisi ki fikr nii krti houngi .....
+                       qki meko tu pura ka pura chahiye
+                       aisa mt sochna ki tu bhut achha h ......
+                       wo to mera mn aa gya tujhpe
+                    </p>
+
+                    <p>
+                        meko ab tujhse achha koi lgta hi nii yrr...waise tujhse jada bura bhi koi ni lgta...
+                        ye photos maine teri snapchat se li h waise ......yaad to hoga hi 😏.
+                    </p>
+
+                </div>
+
+                <img src="letter1.jpeg"
+                     class="letter-image"
+                     alt="Memory">
+
+            </div>
+
+
+            <p>
+                tu life me aaya tbse m kuch jada hsne lgi hu ...pr usse bhi jada rone lgi hu...
+                tu meko kbhi bhi khush kr skta h ...pr tu hmesha dukhi krna hi choose krta h nalayak
+            </p>
+
+
+            <div class="letter-row reverse">
+
+                <img src="letter2.jpeg"
+                     class="letter-image"
+                     alt="Memory">
+
+                <div class="letter-text">
+
+                    <p>
+                        pr tu jo bhi h jaisa bhi h best h 
+                    </p>
+
+                    <p>
+                       best mtlb sbse achha niii.....
+                        bs m aisa maanti hu qki or koi option nii h naaaaaa bby.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <p>
+               dekho achhi baate excpect to ni kr rhe the n??
+            </p>
+
+
+            <div class="letter-row">
+
+                <div class="letter-text">
+
+                    <p>
+                       apne ko abhi bhut saari memories bnani h ....
+                       or agli baaar m achhi photos daalungi.
+                    </p>
+
+                </div>
+
+                <img src="letter3.jpeg"
+                     class="letter-image"
+                     alt="Memory">
+
+            </div>
+
+
+            <p>
+                tu mere sath rehta h to m hmeshaaaaaaaaaaaa smile krti rehti hu .....
+                    isliye nii qki tu meko khush rkhta h 
+                    ....wo to m apni kismat pe hasti hu ...
+                    tu meri life ka sbse important part h ....
+                    na m teko kbhi bhul skti hu or na hi bhulna chahti hu ......
+                    m tujhse sbse sbse sbse jaaadaaa pyar krti hu ...
+                    bhle teri harkate achhi nii h ...😏
+                    pr fir bhi meko tu hi psnd h.....
+               
+            </p>
+
+
+            <div class="letter-row reverse">
+
+                <img src="letter4.jpeg"
+                     class="letter-image"
+                     alt="Memory">
+
+                <div class="letter-text">
+
+                    <p>
+                        apna future sath hua to usse achha mere liye kuch ho ni skta ..
+               or apke liye usse bura kuch ni ho skta.....
+                        fir bhi ab ek promise krle 
+                    </p>
+
+                    <p>
+                        tu meko kbhi cheat ni krega.
+                        meko jhuth ni bolega.
+                        rulane wale kaam nii krega .
+                        or kuch aisa ni krega jo meko ni psnd.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <p>
+                ek promise bola tha bhut ho gyi....
+                pr i hope koi dikkat ni hogi teko.....
+                or yaad aaega to or bolungi..
+            </p>
+
+
+            <p>
+                You are someone I never want to lose from my life.
+                And whatever happens, I hope you always remember
+                that there is someone who genuinely wishes the best
+                for you.
+            </p>
+
+
+            <div class="letter-ending">
+
+                <p>
+                    Some people become memories...
+                </p>
+
+                <p>
+                    But some people become a part of your story.
+                </p>
+
+                <h2>
+                    You are my favourite part. ❤️
+                </h2>
+
+                <p class="signature">
+                    Always yours,<br>
+                    ❤️
+                </p>
+
+                <button id="finishLetterBtn">
+                    bs ye last click ↓
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PAGE 10 : FINAL -->
+
+<section id="finalScreen" class="screen hidden">
+
+    <div class="final-container">
+
+        <div class="final-heart">
+            ❤️
+        </div>
+
+        <h1>
+            I LOVE YOU<br>
+            FOREVER...
+        </h1>
+
+        <div class="final-line">
+            ♡ ♡ ♡
+        </div>
+
+        <p>
+            Jaldi hi milte h... 🥹❤️
+        </p>
+
+        <p class="final-small">
+            Until then, keep smiling for me.
+        </p>
+
+    </div>
+
+</section>
+    <script src="script.js"></script>
+
+</body>
+</html>
